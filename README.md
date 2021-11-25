@@ -8,7 +8,7 @@ Instead, just copy the binary and launch your browser.
 
 The server is always launched on localhost.
 
-By default, it listens on port 3000. This can be changed at runtime using the 'port' parameter. This means you can multiple instances of the same website/webapp.
+By default, it listens on port 3000. This can be changed at runtime using the 'port' parameter. This means you can run multiple instances of the same website/webapp.
 
 Under the hood it uses:
 * clap (https://github.com/clap-rs/clap) for command line arguments handling
