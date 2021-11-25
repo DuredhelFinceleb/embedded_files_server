@@ -1,0 +1,16 @@
+name: embedded_files_server
+version: "0.1.0"
+about: Embeds files into an exe an serves them as HTTP server
+args:
+    - path:
+        long: path
+        value_name: FOLDER
+        about: Folder containing files to embed
+        takes_value: true
+        default_value: "./dist"
+    - port:
+        long: port
+        value_name: PORT
+        about: Port to bind webserver to
+        takes_value: true
+        default_value: "3000"
