@@ -8,7 +8,7 @@ Instead, just copy the binary and launch your browser.
 
 The server is always launched on localhost.
 
-By default, it listens on port 3000. This can be changed at runtime using the 'port' parameter. This means you can run multiple instances of the same website/webapp.
+By default, it listens on port 3000. This can be changed at runtime using the '--port' command line argument. This means you can run multiple instances of the same website/webapp.
 
 Under the hood it uses:
 * clap (https://github.com/clap-rs/clap) for command line arguments handling
@@ -47,4 +47,4 @@ Once satisfied build with:
 ```
 cargo build --release
 ```
-The binary will be 'target/release/embedded_files_server'. It can be renamed and moved freely. Just run it. The '--port' option will be accepted to change the port from the default 3000.
+The binary will be 'target/release/embedded_files_server'. It can be renamed and moved freely. Just run it. The '--port' command line argument will be accepted to change the port from the default 3000.
