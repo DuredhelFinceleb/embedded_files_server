@@ -29,22 +29,12 @@ Could not make it work with Windows 10: 'mio' does not compile for some reason.
 
 Clone this repo.
 
-Edit 'src/main.rs' to change the folder from the default test one included with this repo:
-```
-#[derive(RustEmbed)]
-#[folder = "test_folder"]  <<< CHANGE THIS WITH THE PATH (ABSOLUTE OR RELATIVE TO Cargo.toml) OF THE FOLDER TO EMBED
-```
-
 Then:
 ```
-cargo run
+chmod +x ./embedded_files_server.sh
+./embedded_files_server.sh <path_to_folder_to_embed>
 ```
-To change port default port from 3000:
-```
-cargo run -- --port 6789
-```
-Once satisfied build with:
-```
-cargo build --release
-```
-The binary will be 'target/release/embedded_files_server'. It can be renamed and moved freely. Just run it. The '--port' command line argument will be accepted to change the port from the default 3000.
+
+The binary will be 'target/release/embedded_files_server'. It can be renamed and moved freely. Just run it. 
+
+The '--port' command line argument will be accepted to change the port from the default 3000.

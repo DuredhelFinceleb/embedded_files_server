@@ -11,7 +11,7 @@ use std::io::Cursor;
 use std::path::PathBuf;
 
 #[derive(RustEmbed)]
-#[folder = "test_folder"]
+#[folder = "$EMBEDDED_FILES_PATH"]
 struct Asset;
 
 struct MyFile {
