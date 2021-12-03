@@ -29,12 +29,16 @@ Could not make it work with Windows 10: 'mio' does not compile for some reason.
 
 Clone this repo.
 
-Then:
+Then define the EMBEDDED_FILES_PATH environment variable with the path to the folder to embed:
 ```
-chmod +x ./embedded_files_server.sh
-./embedded_files_server.sh <path_to_folder_to_embed>
+export EMBEDDED_FILES_PATH=<path_to_folder_to_embed>
 ```
-
+Then
+```
+cargo build --release
+```
 The binary will be 'target/release/embedded_files_server'. It can be renamed and moved freely. Just run it. 
 
 The '--port' command line argument will be accepted to change the port from the default 3000.
+
+Note that if you don't want/need the binary, you can just do a 'cargo run' instead.
