@@ -1,4 +1,7 @@
 {
+	"rust-analyzer.runnableEnv": {
+		"EMBEDDED_FILES_PATH": "test_folder"
+	},
 	"rust-analyzer.server.extraEnv": {
 		"EMBEDDED_FILES_PATH": "test_folder"
 	}
