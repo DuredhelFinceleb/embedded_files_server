@@ -22,8 +22,7 @@ Compiled with:
 Tested with
 * Ubuntu 20.04
 * WSL running Ubuntu 20.04
-
-Could not make it work with Windows 10: 'mio' does not compile for some reason.
+* Windows 10 Pro 21H1 (note: if it does not compile crashing on mio 0.7.14, run 'cargo update' & try again)
 
 ## How to install
 
